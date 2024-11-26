@@ -1,0 +1,32 @@
+body {
+  background-image: url(./country-road-morning-haze-13017193.webp);
+  background-size: 100%;
+}
+
+.logo {
+  margin-left: 10px;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: rgb(143, 106, 57);
+}
+
+#main {
+  margin-top: 7%;
+  margin-left: 37%;
+  height: 500px;
+  width: 450px;
+  background-color: url(./country-road-morning-haze-13017193.webp);
+  backdrop-filter: blur(5px);
+}
+
+#cham {
+  font-family: "Times New Roman", Times, serif;
+}
+
+a:hover {
+  color: white;
+}
