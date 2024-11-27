@@ -15,7 +15,7 @@ body {
 }
 
 #main {
-  margin-top: 7%;
+  margin-top: 6%;
   margin-left: 37%;
   height: 500px;
   width: 450px;
@@ -29,4 +29,19 @@ body {
 
 a:hover {
   color: white;
+}
+
+input {
+  background-color: transparent;
+  color: black;
+  border: 3px solid rgb(177, 122, 50);
+  outline: none;
+  border-radius: 30px;
+}
+
+#button {
+  background-color: rgb(94, 71, 29);
+  outline: none;
+  border: none;
+  border-radius: 30px;
 }
