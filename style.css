@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --back-color: #272727;
+  --box-back-color: white;
+  --font-color: rgb(83, 147, 219);
+  --hover-color: black;
+}
+
+body {
+  background-color: var(--back-color);
+}
+
+main {
+  min-height: 90svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 29rem;
+}
+
+.login-box {
+  background: var(--box-back-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 1), 0 6px 8px -2px rgba(0, 0, 0, 1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  background: var(--box-back-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--back-color);
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--hover-color);
+  font-size: 0.875rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+#password {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 1), 0 2px 4px -1px rgba(0, 0, 0, 1);
+}
+
+#email {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 1), 0 2px 4px -1px rgba(0, 0, 0, 1);
+}
+
+input:focus {
+  border-color: var(--font-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 0;
+}
+
+.toggle-password:hover {
+  color: var(--hover-color);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.forgot-password {
+  font-size: 0.875rem;
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password:hover {
+  color: var(--hover-color);
+}
+
+.Create-account {
+  font-size: 0.875rem;
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.Create-account:hover {
+  color: var(--hover-color);
+}
+.submit-btn {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  background: var(--back-color);
+  color: var(--box-back-color);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--hover-color);
+}
+
+.submit-btn:hover {
+  background-color: var(--hover-color);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.signup-link span {
+  color: var(--hover-color);
+}
+
+.signup-link a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+
+.signup-link a:hover {
+  color: var(--font-color);
+}
+
+hr {
+  color: var(--hover-color);
+}
+
+.fooetr {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--hover-color);
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: var(--box-back-color);
+}
+
+@media (max-width: 769px) {
+  .Create-account {
+    font-size: 0.7rem;
+  }
+
+  .forgot-password {
+    font-size: 0.7rem;
+  }
+
+  .fooetr {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 500%;
+    color: var(--font-color);
+  }
+}

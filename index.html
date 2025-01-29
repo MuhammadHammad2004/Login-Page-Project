@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="login-box">
+          <div class="header">
+            <h2>Login Page</h2>
+          </div>
+
+          <form id="loginForm">
+            <div class="input-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" required placeholder="Email" />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                required
+                placeholder="password"
+              />
+            </div>
+
+            <div class="options">
+              <div class="remember-me">
+                <a href="#" class="Create-account">Create Account</a>
+              </div>
+              <a href="#" class="forgot-password">Forgot your password?</a>
+            </div>
+
+            <button
+              type="submit"
+              id="submitButton"
+              class="submit-btn"
+              onclick="comein()"
+            >
+              Sign in
+            </button>
+
+            <div class="signup-link">
+              <span>Don't have an account?</span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br />
+    </main>
+
+    <footer>
+      <hr />
+      <div class="fooetr">
+        <p>Pak.LTD.Limited</p>
+        <p>001.222.436</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
